@@ -5,7 +5,7 @@
 
 #define MY_UUID { 0xE4, 0xED, 0x8F, 0xD9, 0x55, 0xF6, 0x47, 0x34, 0xA5, 0x05, 0x08, 0xA0, 0x07, 0x89, 0x85, 0xF6 }
 PBL_APP_INFO(MY_UUID,
-             "Big Date", "megawertz.com",
+             "Date Only", "megawertz.com",
              1, 0, /* App version */
              DEFAULT_MENU_ICON,
              APP_INFO_WATCH_FACE);
@@ -29,7 +29,7 @@ void handle_minute_tick(AppContextRef ctx, PebbleTickEvent *t) {
 
 void handle_init(AppContextRef ctx) {
 
-  	window_init(&window, "Big Date");
+  	window_init(&window, "Date Only");
   	window_stack_push(&window, true /* Animated */);
   
 	window_set_background_color(&window, GColorBlack);
